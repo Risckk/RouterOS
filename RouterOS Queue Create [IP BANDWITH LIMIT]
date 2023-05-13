@@ -1,0 +1,5 @@
+RouterOS Queue Create [IP BANDWITH LIMIT]
+
+Commandline Enter
+
+/queue simple add name=[Limit IP] target-addresses=[Limit IP] max-limit=10M/10M (max-limit=Download/Upload)
