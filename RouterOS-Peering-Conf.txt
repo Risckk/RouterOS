@@ -1,0 +1,17 @@
+RouterOS BGP Peering Configuration
+
+Step 1:
+
+Router 1 Mikrotik Command Line
+
+/routing bgp peer
+
+add name=peer1 instance=default remote-address=[router2 ip] remote-as=65531 multihop=yes in-filter=connected-in out-filter=connected-in remove-private-as=yes as-override=yes
+
+
+Router 2 Mikrotik Command Line
+
+/routing bgp peer
+
+add name=peer1 instance=default remote-address=[router1 ip] remote-as=65530 multihop=yes in-filter=connected-in out-filter=connected-in remove-private-as=yes as-override=yes
+
