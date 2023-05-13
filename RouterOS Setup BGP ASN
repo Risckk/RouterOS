@@ -1,0 +1,7 @@
+RouterOS Setup BGP ASN
+
+Mikrotik Router Commandline
+
+/routing bgp instance
+
+add name=bgp1 AS=65530 router-id=[router ip] out-filter=connected-in redistribute-connected=yes redistribute-static=yes ignore-as-path-len=yes
